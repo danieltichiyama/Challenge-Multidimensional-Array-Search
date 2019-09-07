@@ -1,9 +1,4 @@
-console.time("timer");
-
 function locate(array, target) {
-  // let string = array.join(" ");
-  // return string.includes(target); //console.time()...0.020ms
-
   isLocated = false;
 
   for (let i = 0; i < array.length; i++) {
@@ -14,8 +9,7 @@ function locate(array, target) {
     }
   }
 
-  return isLocated; //console.time()...0.161ms
+  return isLocated;
 }
 
-console.timeEnd("timer");
 module.exports = locate;
