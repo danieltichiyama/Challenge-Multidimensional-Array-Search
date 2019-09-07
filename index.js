@@ -1,5 +1,6 @@
 function locate(array, target) {
-  // do work here
+  let string = array.join(" ");
+  return string.includes(target);
 }
 
 module.exports = locate;
